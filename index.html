@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <style>
+    .carousel-item {
+      height: 100vh; /* Full viewport height */
+      background-size: cover; /* Cover the entire area */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Prevent image repeat */
+      position: relative;
+    }
+      .carousel {
+      display: none; /* Hide carousel initially */
+    }
+    .carousel-caption {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(198, 197, 197, 0.5); /* Semi-transparent background */
+      color: rgb(24, 23, 23);
+      text-align: center;
+      height: 160px;
+      width: 80%;
+      border-top: 3px solid #84f3a5;
+    }
+    .carousel-caption h5 {
+      font-size: 2.5rem;
+    }
+    .carousel-caption p {
+      font-size: 1.25rem;
+    }
+    .custom-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar stays on top of other elements */
+  }
+  .new-section {
+    padding: 40px;
+    padding-left: 50px;
+    background-color: #f8f9fa; /* Light grey background */
+    text-align: center;
+    display: flexbox;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+ 
+  
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MEDICO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Doctors</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Departments</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true"></a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to=""></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to=""></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image:url('images/med1.jpg');">
+      <div class="carousel-caption">
+        <h5>Welcome to Medico</h5>
+        <p>Providing Quality Healthcare</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('images/ww.webp');">
+      <div class="carousel-caption">
+        <h5>Our Services</h5>
+        <p>Comprehensive Medical Care</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('images/med.jpg');">
+      <div class="carousel-caption">
+        <h5>Expert Doctors</h5>
+        <p>Experienced and Compassionate</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only"></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only"></span>
+  </a>
+</div>
+<section id="featured-services" class="featured-services section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon"><img src="images/heart-beat-rate-icon-vector.jpg" alt=""style="height: 30px;
+          width: 30px;></div>
+          <h4><a href=" class="stretched-link">Heart Rate</a></h4>
+          <p>"Beat by beat, we care."</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon"><img src="images/bp.jpg" style="height: 30px;
+          width: 30px;"></div>
+          <h4><a href="" class="stretched-link">Blood Pressure</a></h4>
+          <p>"Balancing health, one measure at a time."</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon"><img src="images/vector-thermometer-icon.jpg" alt="" style="height: 30px;
+           width: 30px;"></div>
+          <h4><a href="" class="stretched-link">Temperature</a></h4>
+          <p>"Cooling down, warming hearts."</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon"><img src="images/th.jpeg" style="height: 30px;
+           width: 30px;"></div>
+          <h4><a href="" class="stretched-link">Capsules </a></h4>
+          <p>"Tiny capsules, big relief."</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+  </section>
+  <section id="call-to-action" class="call-to-action section accent-background">
+
+    <div class="container">
+      <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-xl-10">
+          <div class="text-center">
+            <h3>In an emergency? Need help now?</h3>
+            <p>Our team is ready to help you in your time of need. Call us now to get the help you need.</p>
+            <a class="cta-btn" href="#appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="about" class="about section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>About Us<br></h2>
+      <p>Learn more about our Services</p>
+    </div>
+
+    <div class="container">
+
+      <div class="row gy-4">
+        <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+          <img src="about.jpg" class="img-fluid" alt="">
+          
+        </div>
+        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+          
+          <p class="fst-italic">
+            Welcome to  a leading cancer treatment center dedicated to providing compassionate care and advanced medical services. Our mission is to offer hope, healing, and a holistic approach to cancer treatment, tailored to meet the unique needs of each patient. With state-of-the-art technology, cutting-edge research, and a team of highly skilled professionals, we are committed to fighting cancer and improving lives.
+          </p>
+          <ul>
+            <li><i class="bi bi-check2-all"></i> <span>Comprehensive Cancer Care: Personalized treatment plans that combine surgery, chemotherapy, radiation, and immunotherapy.</span></li>
+            <li><i class="bi bi-check2-all"></i> <span>Advanced Diagnostic Imaging: Utilizing the latest technology for accurate and early detection.</span></li>
+            <li><i class="bi bi-check2-all"></i> <span>Supportive Care Services: Offering psychological support, nutritional counseling, and pain management to enhance the quality of life.</span></li>
+          </ul>
+          <p>
+            We believe in treating the whole person, not just the disease. Our dedicated team is here to support you every step of the way.
+          </p>
+        </div>
+      </div>
+
+    </div>
+</section>
+<section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="fas fa-user-md flex-shrink-0"></i>
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Doctors</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far fa-hospital flex-shrink-0"></i>
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Departments</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="fas fa-flask flex-shrink-0"></i>
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Research Labs</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="fas fa-award flex-shrink-0"></i>
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Awards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>Our Services</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item  position-relative">
+          <div class="icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <a href="#" class="stretched-link">
+            <h3>Service-1</h3>
+          </a>
+          
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="fas fa-pills"></i>
+          </div>
+          <a href="#" class="stretched-link">
+            <h3>Service-2</h3>
+          </a>
+          
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="fas fa-hospital-user"></i>
+          </div>
+          <a href="#" class="stretched-link">
+            <h3>Service-3</h3>
+          </a>
+          
+      </div><!-- End Service Item -->
+
+  </div>
+
+</section>
+<section id="appointment" class="appointment section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>MAKE AN APPOINTMENT</h2>
+    <p>Book an Appointment</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+      <div class="row">
+        <div class="col-md-4 form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+        </div>
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+        </div>
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+          <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 form-group mt-3">
+          <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required="">
+        </div>
+        <div class="col-md-4 form-group mt-3">
+          <select name="department" id="department" class="form-select" required="">
+            <option value="">Select Department</option>
+            <option value="Department 1">Department 1</option>
+            <option value="Department 2">Department 2</option>
+            <option value="Department 3">Department 3</option>
+          </select>
+        </div>
+        <div class="col-md-4 form-group mt-3">
+          <select name="doctor" id="doctor" class="form-select" required="">
+            <option value="">Select Doctor</option>
+            <option value="Doctor 1">Doctor 1</option>
+            <option value="Doctor 2">Doctor 2</option>
+            <option value="Doctor 3">Doctor 3</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+      </div>
+      <div class="mt-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+        <div class="text-center"><button type="submit">Make an Appointment</button></div>
+      </div>
+    </form>
+
+  </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    let imagesLoaded = 0;
+    const totalImages = $('.carousel-item').length;
+
+    $('.carousel-item').each(function() {
+      const backgroundImageUrl = $(this).css('background-image').replace(/url\((['"])?(.*?)\1\)/gi, '$2').split(',')[0];
+      
+      $('<img/>').attr('src', backgroundImageUrl).on('load', function() {
+        imagesLoaded++;
+        if (imagesLoaded === totalImages) {
+          $('#carouselExampleIndicators').show().carousel(); // Show and start the carousel
+        }
+      }).each(function() {
+        if (this.complete) $(this).trigger('load');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
