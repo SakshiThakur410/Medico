@@ -12,7 +12,10 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
   <style>
+
+ 
     .carousel-item {
       height: 100vh; /* Full viewport height */
       background-size: cover; /* Cover the entire area */
@@ -41,7 +44,9 @@
     .carousel-caption p {
       font-size: 1.25rem;
     }
-    .custom-navbar {
+    .container-fluid {
+      overflow: hidden;
+      background-color: #f8f8f8; /* Light grey background */
     position: fixed;
     top: 0;
     width: 100%;
@@ -74,15 +79,15 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Services
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Doctors</a></li>
-            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <li><a class="dropdown-item" href="#doctors">Doctors</a></li>
+            <li><a class="dropdown-item" href="#contact">Contact</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Departments</a></li>
           </ul>
@@ -136,54 +141,14 @@
 </div>
 
 
+<br>
+<br>
 
-<section id="featured-services" class="featured-services section">
-
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item position-relative">
-       
-          <h4><a href="" class="stretched-link">Efficient Administration and Management</a></h4>
-          
-        </div>
-      </div><!-- End Service Item -->
-
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item position-relative">
-   
-          <h4><a href="" class="stretched-link">High-Quality Medical Staff</a></h4>
-          
-        </div>
-      </div><!-- End Service Item -->
-
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-item position-relative">
-     
-          <h4><a href="" class="stretched-link">State-of-the-Art Facilities and Equipment</a></h4>
-       
-        </div>
-      </div><!-- End Service Item -->
-
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-        <div class="service-item position-relative">
-       
-          <h4><a href="" class="stretched-link">Comprehensive Patient Care</a></h4>
-          
-        </div>
-      </div><!-- End Service Item -->
-
-    </div>
-
-  </div>
-</section>
 
 
   <section id="call-to-action" class="call-to-action section accent-background">
 
-    <div class="container">
+    <div class="container1">
       <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
         <div class="col-xl-10">
           <div class="text-center">
@@ -208,14 +173,15 @@
 
       <div class="row gy-4">
         <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-          <img src="about.jpg" class="img-fluid" alt="">
+          <img src="images/nep.jpg" class="img-fluid" alt="">
           
         </div>
-        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200" >
           
           <p class="fst-italic">
             Welcome to  a leading cancer treatment center dedicated to providing compassionate care and advanced medical services. Our mission is to offer hope, healing, and a holistic approach to cancer treatment, tailored to meet the unique needs of each patient. With state-of-the-art technology, cutting-edge research, and a team of highly skilled professionals, we are committed to fighting cancer and improving lives.
           </p>
+          <h5>Our Services</h5>
           <ul>
             <li><i class="bi bi-check2-all"></i> <span>Comprehensive Cancer Care: Personalized treatment plans that combine surgery, chemotherapy, radiation, and immunotherapy.</span></li>
             <li><i class="bi bi-check2-all"></i> <span>Advanced Diagnostic Imaging: Utilizing the latest technology for accurate and early detection.</span></li>
@@ -224,109 +190,20 @@
           <p>
             We believe in treating the whole person, not just the disease. Our dedicated team is here to support you every step of the way.
           </p>
+        
+          
         </div>
       </div>
 
     </div>
 </section>
-<section id="stats" class="stats section">
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="row gy-4">
 
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item d-flex align-items-center w-100 h-100">
-          <i class="fas fa-user-md flex-shrink-0"></i>
-          <div>
-            <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Doctors</p>
-          </div>
-        </div>
-      </div><!-- End Stats Item -->
+<br>
+<br>
 
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item d-flex align-items-center w-100 h-100">
-          <i class="far fa-hospital flex-shrink-0"></i>
-          <div>
-            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Departments</p>
-          </div>
-        </div>
-      </div><!-- End Stats Item -->
 
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item d-flex align-items-center w-100 h-100">
-          <i class="fas fa-flask flex-shrink-0"></i>
-          <div>
-            <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Research Labs</p>
-          </div>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item d-flex align-items-center w-100 h-100">
-          <i class="fas fa-award flex-shrink-0"></i>
-          <div>
-            <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Awards</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="services" class="services section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Services</h2>
-    <p>Our Services</p>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item  position-relative">
-          <div class="icon">
-            <i class="fas fa-heartbeat"></i>
-          </div>
-          <a href="#" class="stretched-link">
-            <h3>Service-1</h3>
-          </a>
-          
-        </div>
-      </div><!-- End Service Item -->
-
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item position-relative">
-          <div class="icon">
-            <i class="fas fa-pills"></i>
-          </div>
-          <a href="#" class="stretched-link">
-            <h3>Service-2</h3>
-          </a>
-          
-        </div>
-      </div><!-- End Service Item -->
-
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-item position-relative">
-          <div class="icon">
-            <i class="fas fa-hospital-user"></i>
-          </div>
-          <a href="#" class="stretched-link">
-            <h3>Service-3</h3>
-          </a>
-          
-      </div><!-- End Service Item -->
-
-  </div>
-
-</section>
 <section id="appointment" class="appointment section light-background">
 
   <!-- Section Title -->
@@ -401,11 +278,11 @@
       <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
         <div class="team-member">
           <div class="member-img">
-            <img src="images/pl.jpg" class="img-fluid" alt="">
+            <img src="images/doctors.jpg" class="img-fluid" alt="">
            
           </div>
           <div class="member-info">
-            <h4>Sira Neupane</h4>
+            <h4>Yunisha Neupane</h4>
             <span>Chief Medical Officer</span>
           </div>
         </div>
@@ -418,7 +295,7 @@
            
           </div>
           <div class="member-info">
-            <h4>Yunish Wagle</h4>
+            <h4>Yujen Wagle</h4>
             <span>Dentist</span>
           </div>
         </div>
@@ -427,11 +304,11 @@
       <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
         <div class="team-member">
           <div class="member-img">
-            <img src="images/med.jpg" class="img-fluid" alt="">
+            <img src="images/doctors.jpg" class="img-fluid" alt="">
             
           </div>
           <div class="member-info">
-            <h4>Swikriti Pradhan</h4>
+            <h4>Swikriti Rajbhandari</h4>
             <span>Cardiology</span>
           </div>
         </div>
@@ -581,7 +458,7 @@
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 footer-about">
         <a href="index.html" class="logo d-flex align-items-center">
-          <span class="sitename">Medic0</span>
+          <span class="sitename">Medico</span>
         </a>
         <div class="footer-contact pt-3">
           <p>Harisiddhi,Lalitpur-Nepal</p>
@@ -590,9 +467,12 @@
         </div>
         <div class="social-links d-flex mt-4">
     
-          <a href="https://www.facebook.com/NepalCancerHospital/"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/nepalcancer_hospital/"><i class="bi bi-instagram"></i></a>
-       
+          <a href="https://www.facebook.com/NepalCancerHospital/" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
         </div>
       </div>
 
@@ -613,7 +493,7 @@
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p>© <span>Copyright</span> <strong class="px-1 sitename">Medico</strong> <span>All Rights Reserved</span></p>
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">MEDICO</strong> <span>All Rights Reserved</span></p>
     <div class="credits">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you've purchased the pro version. -->
